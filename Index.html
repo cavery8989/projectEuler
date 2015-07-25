@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+    <title>Euler Project</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+    <style>
+        
+        input{
+            text-align: right;
+        }
+        
+    </style>
+    
+    
+</head>
+
+<body>
+
+    
+    <div id="container">
+        
+        <div id="chal1">
+        
+            <h1>Multiples of 3 and 5</h1>
+            
+            <p>If we list all the natural numbers below 10 that are multiples of 3 or
+                5,
+                we get 3, 5, 6 and 9. The sum of these multiples is 23.</p>
+            
+            <input id="chal1input" type ="number" value="1000"/>
+        
+        
+        </div>
+        
+        <button id="runchal1">Change first div text</button>
+        
+        <p>Answer: <span id="ans1"></span></p>
+    
+    
+    </div>
+
+
+
+
+    
+
+    
+
+
+
+    
+    
+
+
+
+
+	<script type="text/javascript">
+        
+        
+    
+    /* challange 1 ... 
+    
+        When runchal1 is pressed the value of input box chal1input is taken and stored
+        in the chal1val variable. this value is then loaded into a funthion that adds
+        together any numbers that are divisible by either 3 or 5 that exist between 1
+        and its value. the result is diplayed in the span tag.
+        */
+        
+    document.getElementById("runchal1").onclick=function(){
+        
+        
+        function euler1(input) {
+            
+            var sum = 0;
+
+            for(var i=1;i<1000;i++) {
+                if(i%3===0 || i%5===0) {
+                        sum += i;
+                    }
+                }  
+                return sum;
+            }
+        
+        
+        var chal1val = document.getElementById("chal1input").value;
+        
+        
+        var answer = euler1(chal1val);
+        
+        document.getElementById("ans1").innerHTML=answer;
+        
+        
+        alert(answer);
+        
+        
+        
+    }	
+	
+
+	</script>
+    
+    
+
+
+
+</body>
+</html>
