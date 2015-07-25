@@ -72,12 +72,13 @@
         
     document.getElementById("runchal1").onclick=function(){
         
+        var chal1val = document.getElementById("chal1input").value;
         
         function euler1(input) {
             
             var sum = 0;
 
-            for(var i=1;i<1000;i++) {
+            for(var i=1;i<input;i++) {
                 if(i%3===0 || i%5===0) {
                         sum += i;
                     }
@@ -86,7 +87,7 @@
             }
         
         
-        var chal1val = document.getElementById("chal1input").value;
+        
         
         
         var answer = euler1(chal1val);
