@@ -1,9 +1,9 @@
     /* challange 1 ... 
     
         When runchal1 is pressed the value of input box chal1input is taken and stored
-        in the chal1val variable. this value is then loaded into a funthion that adds
+        in the chal1val variable. This value is then passed to a function that adds
         together any numbers that are divisible by either 3 or 5 that exist between 1
-        and its value. the result is diplayed in the span tag.
+        and its value. The result is diplayed in the span tag.
         */
         
     document.getElementById("runchal1").onclick = function () {
@@ -34,9 +34,9 @@
     /* challange 2 ... 
             
             Use while loop to run counting sequence untill input X is reached. Check
-            to see if current nubmer is sequence is even, if it is add it to the sum 
+            to see if current number is sequence is even, if it is add it to the sum 
             variable. 
-            return sum when x is reached. 
+            Return sum when x is reached. 
         
         */
     
@@ -73,7 +73,7 @@
     /* challange 3 ... 
             
             Number is divided by divisor (and divisor is added to factor array) untill
-            the dvision between muber and divider leaves a remainder. At this point
+            the division between muber and divider leaves a remainder. At this point
             divisor is incremented by 1 and the process continues. If number reaches
             the largest prime factor has been found and the cycle stops.
         
