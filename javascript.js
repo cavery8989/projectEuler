@@ -3,7 +3,7 @@
         When runchal1 is pressed the value of input box chal1input is taken and stored
         in the chal1val variable. This value is then passed to a function that adds
         together any numbers that are divisible by either 3 or 5 that exist between 1
-        and its value. The result is diplayed in the span tag.
+        and its value. The result is displayed in the span tag.
         */
         
     document.getElementById("runchal1").onclick = function () {
